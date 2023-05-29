@@ -1,5 +1,5 @@
 
-print("Hello In SOS Game")
+print("Hello In SOS Game; (play on capital letters)")
 playerX = input("Enter Name of First Player : \t")
 playerY = input("Enter Name of Second Player : \t")
 playerX_score = playerY_score = loop_no = counter  = previous_playerX = previous_playerY = 0
@@ -53,7 +53,7 @@ display()
 
 def inputa() :
     global value
-    value = str(input("Enter Value ( S / O) : \n"))
+    value = str(input("Enter Value ( S / O) CAPITAL LETTERS: \n"))
     print("\n")
     global position
     global available
