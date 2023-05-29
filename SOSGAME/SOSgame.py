@@ -1,7 +1,7 @@
 
-print("Hello In SOS Game")
+print("Hello In SOS Game") #Inicio del juego
 playerX = input("Enter Name of First Player : \t")
-playerY = input("Enter Name of Second Player : \t")
+playerY = input("Enter Name of Second Player : \t") 
 playerX_score = playerY_score = loop_no = counter  = previous_playerX = previous_playerY = 0
 toggle = 1
 running = True
@@ -15,7 +15,7 @@ for i in range(0,16):
  available.append(i+1)
 
 
-def display() :
+def display() :    #impresión de la grilla, concatenar valores literales para ganar; ej: SO, SOS,
     global grid
     grid=""
     for i in range (0,16) :
@@ -51,7 +51,7 @@ display()
 
 
 
-def inputa() :
+def inputa() : #intento para que el jugador juegue
     global value
     value = str(input("Enter Value ( S / O) : \n"))
     print("\n")
@@ -68,7 +68,7 @@ def inputa() :
 
 
 
-def switch_player() :
+def switch_player() : 
     global toggle
     global playerX_score
     global playerY_score
@@ -79,7 +79,7 @@ def switch_player() :
      return ">>>>>> First player turn >>>>>>" 
     
 
-    elif (loop_no !=0):
+    elif (loop_no !=0):   #Si el jugador acierta, ingresa en el bucle y vuelve a jugar, de lo contrario el turno es cedido al siguiente jugador 
      if ( toggle == 1 ):
       if ( playerX_score > previous_playerX):
        return ">>>>>> First player turn >>>>>>" 
